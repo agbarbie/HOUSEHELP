@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HOME.CSS">
+    <title>BEST HOUSEHELP TO FIND IN KENYA</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo"><img src="c:\Users\Barbara\Downloads\Capture-removebg-preview (8).png" alt="Logo"></a>
+            <h1>BEST HOUSEHELP TO FIND IN KENYA</h1>
+            <nav>
+                <a href="HOME.html">HOME</a>
+                <a href="ABOUT US.html">ABOUT US</a>
+                <a href="CONTACT US.html">CONTACT US</a>
+                <a href="LOGIN.html">LOGIN</a>
+                <a href="SERVICES.html">SERVICES</a>
+                <a href="PAYMENT.html">PAYMENT</a>
+                <a href="GALLERY.html">GALLERY</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gallery-container">
+        <div class="image-gallery">
+            <img src="https://www.betterhelpmaids.com/userFiles/CategoryImage/bigThumb/637296879542457641.jpg" alt="Image 1">
+            <img src="https://i.roamcdn.net/hz/pi/listing-thumb-543w/238398fed9b3f3f11f270d9320151fd9/-/horizon-files-prod/pi/picture/qrz2gdk4/586ba803483c128c52c0b5da748d092972dda5ac.jpg" alt="Image 2">
+            <img src="https://pbs.twimg.com/media/GIXahGtXoAAQg9_.jpg" alt="Image 3">
+            <img src="https://cdn.prod.website-files.com/6038c1030be2580db46ccf46/618cff2088081d078ef52ad5_househelp-mother-child%20(1).jpg" alt="Image 4">
+            <img src="https://cdn.standardmedia.co.ke/images/wysiwyg/images/juBukfy99M7hf3rog6PGnRlFuwOgMZNPEg66BNr6.jpg" alt="Image 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMG5WA8fMBh6nYkKE0HZ7FCBDJyrlSHPbhRn-nInywSRQxfnzTacXJ4vY1jmGl2Yt2Fk4&usqp=CAU" alt="Image 6">
+        </div>
+        <div class="gallery-buttons">
+            <button id="prevButton" class="gallery-button" onclick="prevImage()">Previous</button>
+            <button id="nextButton" class="gallery-button" onclick="nextImage()">Next</button>
+        </div>
+        <div class="book-button-container">
+            <a href="#" class="book-button">Book the Best Now</a>
+        </div>
+    </div>
+
+    <script>
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.image-gallery img');
+        const prevButton = document.getElementById('prevButton');
+        const nextButton = document.getElementById('nextButton');
+
+        function showImage(index) {
+            images.forEach(img => img.style.display = 'none');
+            images[index].style.display = 'block';
+        }
+
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        function prevImage() {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            showImage(currentImageIndex);
+        }
+
+        // Show the first image initially
+        showImage(currentImageIndex);
+    </script>
+
+    <section class="services">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Welcome to Best Househelp Services. We specialize in providing top-notch househelp solutions tailored to meet your specific needs. Whether you require professional housekeeping, reliable nanny services, elderly care, or assistance with daily chores, our experienced team is here to assist. We pride ourselves on matching families with trustworthy and skilled househelps who ensure a clean, safe, and comfortable environment in your home. Discover peace of mind knowing that your household is in caring hands. Contact us today to learn more about how we can support your family's unique requirements.</p>
+
+            <div class="items">
+                <div class="item">
+                    <img src="https://bestcaregardeners.co.ke/wp-content/uploads/2022/12/gardening-maintenance-services-in-Nairobi.jpeg" alt="Gardener">
+                    <h4>Gardener</h4>
+                    <button>Order for one</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <h3>Mission</h3>
+                <p>Our mission at Best Househelp Services is to provide reliable and compassionate househelp solutions that enhance the quality of life for families in Kenya. We aim to exceed expectations by delivering personalized services and maintaining the highest standards of professionalism and integrity.</p>
+
+                <h3>Vision</h3>
+                <p>Our vision is to be the leading provider of househelp services in Kenya, recognized for our commitment to excellence, customer satisfaction, and employee welfare. We strive to create harmonious living environments and empower communities through exceptional household support.</p>
+            </div>
+
+            <div class="review">
+                <h2>Flagged Nanny Review</h2>
+                <div class="reasons">
+                    <h3>Reasons to Choose Us</h3>
+                    <ul>
+                        <li><strong>Top-Rated Company:</strong> We hold a successful track record of satisfying our customers and ensuring they get back their bond money.</li>
+                        <li><strong>Superior Quality:</strong> We use the most excellent quality tools and equipment to thoroughly clean your premises and remove all dust and dirt.</li>
+                        <li><strong>Eco-Friendly Products:</strong> We prioritize the use of biodegradable products that are safe for the environment, pets, and humans alike.</li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h3>Natural Cleaning Products</h3>
+                    <p>We feel good about cleaning with our self-formulated, natural products that are better for the environment. We combine high concentrates of pure organic essential oils with quality plant-derived ingredients. All of our packaging, bottles, cleaning equipment, even our uniforms come from recycled, fair trade, or low-impact origins.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-details">
+                <p>Best HouseHelp found In Kenya, Nyeri</p>
+                <p>Phone: 0705524140</p>
+                <p>Email: barbarawangui2002@gmail.com</p>
+                <p>Hours: Mon-Fri: 08:00 AM – 16:00 PM, Sat-Sun: 11:00 AM – 16:00 PM</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
