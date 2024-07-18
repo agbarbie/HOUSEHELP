@@ -1,0 +1,290 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+.header {
+    background-color: #800000; /* Maroon color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+}
+
+.header-left, .header-center, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 60px; /* Adjust logo height */
+    width: auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition
+
+}
+
+nav a:hover {
+    color: #ffc107; /* Yellow color on hover */
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Book Button Styles */
+.book-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #800000; /* Maroon color */
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.book-button:hover {
+    background-color: #4c0000; /* Darker maroon color on hover */
+}
+
+/* Services Section Styles */
+.services {
+    background-color: #000000; /* Black color */
+    color: white;
+    padding: 20px 0;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.services p {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item {
+    text-align: center;
+    width: 300px;
+    margin: 20px 10px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.item h4 {
+    margin-top: 10px;
+}
+
+.item button {
+    background-color: #800000; /* Maroon color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #4c0000; /* Darker maroon color on hover */
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px 0;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.review {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.review h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.review .reasons {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.review .reasons h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review .reasons ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.review .products {
+    text-align: left;
+}
+
+.review .products h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review .products p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: #333; /* Dark gray background */
+    color: white;
+    padding: 20px 0;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-details {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header .logo img {
+        height: 50px;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .image-gallery img {
+        max-width: 100%;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
